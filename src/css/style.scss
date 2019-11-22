@@ -1,2 +1,29 @@
 @import "modules/mixin";
 @import "modules/normalize";
+
+// COLORS
+$white: #ffffff;
+$black: #000000;
+$orange: #e98170;
+
+// MEDIA QUERIES
+$mobile: "(max-width: 1279px)";
+$desktop: "(min-width: 1280px)";
+
+html,
+body {
+	width: 100%;
+	min-height: 100vh;
+	background-color: $white;
+	font-family: 'Roboto', sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+	-webkit-overflow-scrolling: touch;
+	-webkit-appearance: none;
+	-webkit-text-size-adjust: none;
+}
+
+@import "modules/index";
+@import "modules/kv";

@@ -1,0 +1,80 @@
+.help {
+	padding: 4.08rem 0 4.4rem 0;
+
+	@media #{$desktop} {
+		padding: 84px 0 92px 0;
+	}
+
+	&__logo {
+		width: 18.2rem;
+		height: 2.2rem;
+		margin: 0 auto;
+		background: url(../img/help-logo.svg) no-repeat 50%;
+		background-size: contain;
+
+		@media #{$desktop} {
+			width: 425px;
+			height: 47px;
+		}
+	}
+
+	&__title {
+		margin: 2.1rem auto 0;
+		line-height: 1.25;
+		letter-spacing: 0.8px;
+		font-size: 1.5rem;
+		font-weight: 700;
+		text-align: center;
+
+		@media #{$desktop} {
+			width: 900px;
+			margin-top: 45px;
+			font-size: 28px;
+		}
+	}
+
+	&__list {
+		width: 98%;
+		margin: 1.5rem auto 0;
+
+		@media #{$desktop} {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: flex-start;
+			margin: 110px auto 0;
+		}
+	}
+	&__item {
+		margin-top: 1.52rem;
+
+		@media #{$desktop} {
+			width: 20%;
+			margin-top: 0;
+		}
+	}
+	&__img {
+		width: 3.4rem;
+		height: 3.4rem;
+		margin: 0 auto;
+		background-color: $gray--light;
+		border-radius: 50%;
+
+		@media #{$desktop} {
+			width: 70px;
+			height: 70px;
+		}
+	}
+	&__text {
+		margin-top: 1.5rem;
+		line-height: 1.25;
+		font-size: 1.18rem;
+		font-weight: 300;
+		text-align: center;
+
+		@media #{$desktop} {
+			margin-top: 24px;
+			font-size: 19px;
+		}
+	}
+}

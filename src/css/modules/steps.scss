@@ -1,0 +1,132 @@
+.steps {
+	padding: 4.86rem 0 4.7rem;
+	background-color: $blue;
+
+	@media #{$desktop} {
+		padding: 100px 0 138px;
+	}
+
+	&__title {
+		color: $white;
+		font-size: 1.8rem;
+		font-weight: 300;
+		text-align: center;
+
+		@media #{$desktop} {
+			font-size: 40px;
+		}
+	}
+	&__list {
+		width: 93%;
+		margin: 0 auto;
+
+		@media #{$desktop} {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			width: 93%;
+			padding-top: 218px;
+		}
+	}
+	&__item {
+		position: relative;
+		color: $white;
+		font-size: 1.75rem;
+		font-weight: 300;
+		line-height: 1.15;
+		margin-top: 8.6rem;
+
+		@media #{$desktop} {
+			width: 33.3%;
+			margin-top: 0;
+			font-size: 28px;
+		}
+
+		&:nth-of-type(1) {
+			// padding: 20px 0 0 20px;
+
+			@media #{$desktop} {
+				padding: 20px 0 0 20px;
+			}
+
+			&:before {
+				content: '1';
+				top: -8.43rem;
+				left: -1.8rem;
+
+				@media #{$desktop} {
+					top: -188px;
+					left: -58px;
+				}
+			}
+		}
+
+		&:nth-of-type(2) {
+
+			@media #{$desktop} {
+				padding-top: 10px;
+			}
+
+			&:before {
+				content: '2';
+				top: -8.6rem;
+				left: -1.7rem;
+
+				@media #{$desktop} {
+					top: -185px;
+					left: -56px;
+				}
+			}
+
+			span {
+
+				@media #{$desktop} {
+					width: 340px;
+				}
+			}
+		}
+
+		&:nth-of-type(3) {
+
+			@media #{$desktop} {
+				width: 25.5%;
+			}
+
+			&:before {
+				content: '3';
+				top: -8.6rem;
+				left: -1.7rem;
+
+				@media #{$desktop} {
+					top: -186px;
+					left: -46px;
+				}
+			}
+			span {
+				@media #{$desktop} {
+					width: 300px;
+				}
+			}
+		}
+
+		&:before {
+			display: block;
+			position: absolute;
+			color: $blue--light;
+			font-size: 10.84rem;
+			font-weight: 500;
+
+			@media #{$desktop} {
+				font-size: 223px;
+			}
+		}
+		span {
+			position: relative;
+			display: block;
+
+			@media #{$desktop} {
+				width: 200px;
+			}
+		}
+	}
+}

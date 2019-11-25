@@ -16,18 +16,19 @@
 		}
 	}
 	&__list {
-		margin: 0 auto;
+		margin: 2.5rem auto 0;
 
 		@media #{$desktop} {
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
-			padding-top: 94px;
+			margin-top: 94px;
 		}
 	}
 	&__item {
 		position: relative;
-		font-size: 1.75rem;
+		margin-top: 1.5rem;
+		font-size: 1.4rem;
 		font-weight: 300;
 		line-height: 1.15;
 
@@ -47,6 +48,7 @@
 		span {
 			position: relative;
 			display: block;
+			margin-top: 1rem;
 			line-height: 1.2;
 
 			@media #{$desktop} {
@@ -56,11 +58,11 @@
 	}
 
 	&__num {
-		width: 45px;
-		height: 45px;
-		line-height: 45px;
+		width: 2.2rem;
+		height: 2.2rem;
+		line-height: 2.2rem;
 		color: $white;
-		font-size: 1.1rem;
+		font-size: 1.2rem;
 		font-weight: 700;
 		text-align: center;
 		border-radius: 50%;

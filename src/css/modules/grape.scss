@@ -6,29 +6,43 @@
 	}
 
 	&__conetnt {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
+
+		@media #{$desktop} {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
 	}
 
 	&__col {
-		width: 48.5%;
+
+		@media #{$desktop} {
+			width: 48.5%;
+		}
 
 		&:nth-of-type(1) {
 			display: flex;
 			flex-direction: column;
-			height: 420px;
-			padding: 75px 0 0 58px;
+			height: 17.5rem;
+			padding: 3rem 0 0 2.1rem;
 			border: 3px solid $lime;
+
+			@media #{$desktop} {
+				height: 420px;
+				padding: 75px 0 0 58px;
+			}
 		}
 
 		&:nth-of-type(2) {
-			width: 48%;
+
+			@media #{$desktop} {
+				width: 48%;
+			}
 		}
 	}
 
 	&__title {
-		font-size: 1.87rem;
+		font-size: 2.2rem;
 		font-weight: 700;
 		text-transform: uppercase;
 
@@ -42,11 +56,16 @@
 	}
 
 	&__subtitle {
-		width: 400px;
-		margin-top: 20px;
+		margin-top: 1.1rem;
 		line-height: 1.2;
-		font-size: 30px;
+		font-size: 1.5rem;
 		font-weight: 300;
+
+		@media #{$desktop} {
+			width: 400px;
+			margin-top: 20px;
+			font-size: 30px;
+		}
 	}
 
 	&__text {
@@ -63,8 +82,7 @@
 	}
 	&__btn {
 		display: block;
-		//width: 100%;
-		width: 21.55rem;
+		width: 20rem;
 		height: 3.3rem;
 		line-height: 3.3rem;
 		margin: 2rem auto 0;
@@ -75,6 +93,7 @@
 		color: $white;
 		background-color: $violet;
 		border-radius: 2rem;
+		transition: color 0.3s ease-in;
 		cursor: pointer;
 
 		@media #{$desktop} {
@@ -84,6 +103,13 @@
 			margin: 35px 0 0 0;
 			font-size: 21px;
 			border-radius: 30px;
+		}
+
+		&:hover {
+			@media #{$desktop} {
+				color: $lime;
+				transition: color 0.3s ease-out;
+			}
 		}
 	}
 }

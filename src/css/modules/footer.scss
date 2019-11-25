@@ -7,30 +7,57 @@
 	}
 
 	&__content {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
+
+		@media #{$desktop} {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+		}
 	}
 
 	&__logo {
 		color: $violet;
-		font-size: 40px;
+		font-size: 2rem;
 		font-weight: 700;
 		text-transform: uppercase;
+
+		@media #{$desktop} {
+			font-size: 40px;
+		}
 	}
 
 	&__description {
-		width: 650px;
-		font-size: 16.5px;
+		margin-top: 1.1rem;
+		font-size: 0.9rem;
 		font-weight: 300;
 		line-height: 1.2;
+
+		@media #{$desktop} {
+			width: 650px;
+			margin-top: 0;
+			font-size: 16.5px;
+		}
+
+		span {
+			display: block;
+
+			@media #{$desktop} {
+				width: 460px;
+			}
+		}
 	}
 
 	&__copyright {
-		width: 200px;
-		font-size: 22px;
+		margin-top: 1.1rem;
+		font-size: 1.1rem;
 		font-weight: 300;
-		text-align: right;
+
+		@media #{$desktop} {
+			width: 200px;
+			margin-top: 0;
+			font-size: 22px;
+			text-align: right;
+		}
 	}
 }

@@ -37,7 +37,7 @@
 				&:before {
 					width: 12.88rem;
 					height: 11rem;
-					top: -1.5rem;
+					top: -2.7rem;
 					right: 0.6rem;
 					background: url(../img/volunteer.png) no-repeat 50%;
 					background-size: contain;
@@ -52,20 +52,23 @@
 			}
 		}
 		&:nth-of-type(2) {
-			padding: 2.1rem 0 4.1rem 0;
+			padding: 3.4rem 0 4.1rem 0;
 
 			@media #{$desktop} {
 				padding: 62px 0 93px 0;
 			}
 
 			& .useful__content {
-				transform: translateY(-20px);
+
+				@media #{$desktop} {
+					transform: translateY(-20px);
+				}
 
 				&:before {
 					width: 10.93rem;
 					height: 10.93rem;
 					right: 0.6rem;
-					top: -1.7rem;
+					top: -2.5rem;
 					background: url(../img/maecenas.svg) no-repeat 50%;
 					background-size: contain;
 

@@ -13,7 +13,7 @@
 	}
 
 	&__title {
-		font-size: 3.4rem;
+		font-size: 3rem;
 		font-weight: 100;
 		text-transform: uppercase;
 
@@ -23,7 +23,7 @@
 
 		span {
 			line-height: 0.9;
-			font-size: 4.56rem;
+			font-size: 3.56rem;
 			font-weight: 700;
 			letter-spacing: 2.6px;
 			color: $violet;
@@ -69,7 +69,7 @@
 			}
 
 			&:before {
-				top: 1.2rem;
+				top: 0.5rem;
 
 				@media #{$desktop} {
 					top: 10px;

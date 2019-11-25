@@ -24,18 +24,20 @@
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		justify-content: space-between;
+		justify-content: space-evenly;
 		align-items: center;
 		margin-top: 4rem;
 
 		@media #{$desktop} {
+			justify-content: space-between;
 			margin-top: 84px;
 		}
 	}
 
 	&__item {
-		margin: 0 1.4rem 1.75rem 1.1rem;
+		//margin: 0 1.4rem 1.75rem 1.1rem;
 		//transition: background 0.3s ease-in;
+		margin: 0.7rem 1.2rem;
 		cursor: pointer;
 
 		@media #{$desktop} {
@@ -52,15 +54,17 @@
 		}
 
 		&_google {
-			width: 169px;
-			height: 56px;
+			width: 8.45rem;
+			height: 2.8rem;
+			background-image: url(../img/google.png);
+			background-size: 8.45rem 5.6rem;
+			background-position: 0 0;
 
 			@media #{$desktop} {
 				width: 169px;
 				height: 56px;
-				background-image: url(../img/google.png);
 				background-size: 169px 112px;
-				background-position: 0 0;
+
 			}
 			&:hover {
 				@media #{$desktop} {
@@ -70,15 +74,16 @@
 		}
 
 		&_imho {
-			width: 90px;
-			height: 90px;
+			width: 4.5rem;
+			height: 4.5rem;
+			background-image: url(../img/imho.png);
+			background-size: 4.5rem 9rem;
+			background-position: 0 0;
 
 			@media #{$desktop} {
 				width: 90px;
 				height: 90px;
-				background-image: url(../img/imho.png);
 				background-size: 90px 180px;
-				background-position: 0 0;
 			}
 			&:hover {
 				@media #{$desktop} {
@@ -88,15 +93,16 @@
 		}
 
 		&_rbk {
-			width: 168px;
-			height: 45px;
+			width: 8.4rem;
+			height: 2.25rem;
+			background-image: url(../img/rbk.png);
+			background-size: 8.4rem 4.5rem;
+			background-position: 0 0;
 
 			@media #{$desktop} {
 				width: 168px;
 				height: 45px;
-				background-image: url(../img/rbk.png);
 				background-size: 168px 90px;
-				background-position: 0 0;
 			}
 			&:hover {
 				@media #{$desktop} {
@@ -106,15 +112,16 @@
 		}
 
 		&_ok {
-			width: 91px;
-			height: 91px;
+			width: 4.55rem;
+			height: 4.55rem;
+			background-image: url(../img/ok.png);
+			background-size: 4.55rem 9.1rem;
+			background-position: 0 0;
 
 			@media #{$desktop} {
 				width: 91px;
 				height: 91px;
-				background-image: url(../img/ok.png);
 				background-size: 91px 182px;
-				background-position: 0 0;
 			}
 			&:hover {
 				@media #{$desktop} {
@@ -124,15 +131,16 @@
 		}
 
 		&_nra {
-			width: 292px;
-			height: 69px;
+			width: 14.6rem;
+			height: 3.45rem;
+			background-image: url(../img/nra.png);
+			background-size: 14.6rem 6.9rem;
+			background-position: 0 0;
 
 			@media #{$desktop} {
 				width: 292px;
 				height: 69px;
-				background-image: url(../img/nra.png);
 				background-size: 292px 138px;
-				background-position: 0 0;
 			}
 			&:hover {
 				@media #{$desktop} {

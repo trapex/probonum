@@ -21,7 +21,8 @@
 	}
 
 	&__you {
-		font-size: 65px;
+		margin-top: 2.25rem;
+		font-size: 3.25rem;
 		font-weight: 700;
 		text-transform: uppercase;
 		text-align: center;
@@ -46,7 +47,8 @@
 	}
 
 	&__btn {
-		width: 21.55rem;
+		display: block;
+		width: 20rem;
 		height: 3.3rem;
 		line-height: 3.3rem;
 		margin: 0 auto;
@@ -65,6 +67,14 @@
 			line-height: 58px;
 			font-size: 21px;
 			border-radius: 30px;
+		}
+
+		&:nth-of-type(2) {
+			margin-top: 1.4rem;
+
+			@media #{$desktop} {
+				margin-top: 0;
+			}
 		}
 
 		&:hover {

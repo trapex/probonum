@@ -33,7 +33,7 @@
 				background-color: rgba(255, 255, 255, 0.78);
 			}
 
-			& .useful__title {
+			& .useful__content{
 				&:before {
 					width: 12.88rem;
 					height: 11rem;
@@ -58,7 +58,7 @@
 				padding: 62px 0 93px 0;
 			}
 
-			& .useful__title {
+			& .useful__content {
 				transform: translateY(-20px);
 
 				&:before {
@@ -80,6 +80,20 @@
 		}
 	}
 
+	&__content {
+		position: relative;
+
+		@media #{$desktop} {
+			width: 45%;
+		}
+
+		&:before {
+			content: '';
+			position: absolute;
+			background-size: contain;
+		}
+	}
+
 	&__title {
 		position: relative;
 		line-height: 1.1;
@@ -89,14 +103,7 @@
 		color: $violet;
 
 		@media #{$desktop} {
-			width: 45%;
 			font-size: 35px;
-		}
-
-		&:before {
-			content: '';
-			position: absolute;
-			background-size: contain;
 		}
 
 		span {

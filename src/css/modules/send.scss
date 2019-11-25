@@ -57,6 +57,7 @@
 		text-align: center;
 		text-transform: uppercase;
 		border-radius: 32rem;
+		transition: color 0.3s ease-in;
 
 		@media #{$desktop} {
 			width: 360px;
@@ -64,6 +65,13 @@
 			line-height: 58px;
 			font-size: 21px;
 			border-radius: 30px;
+		}
+
+		&:hover {
+			@media #{$desktop} {
+				color: $violet;
+				transition: color 0.3s ease-out;
+			}
 		}
 	}
 }

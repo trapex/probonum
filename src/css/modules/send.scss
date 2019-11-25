@@ -1,20 +1,35 @@
 .send {
 	padding: 4.5rem 0 4rem;
-	background-color: $yellow--light;
+	background-color: $lime;
 
 	@media #{$desktop} {
-		padding: 122px 0 107px;
+		padding: 93px 0 105px;
 	}
 
 	&__text {
 		font-size: 1.8rem;
 		font-weight: 300;
 		text-align: center;
-		letter-spacing: 0.5px;
-		line-height: 1.1;
+		letter-spacing: 0.1px;
+		line-height: 1.2;
 
 		@media #{$desktop} {
-			font-size: 40px;
+			width: 1040px;
+			margin: 0 auto;
+			font-size: 35px;
+		}
+	}
+
+	&__you {
+		font-size: 65px;
+		font-weight: 700;
+		text-transform: uppercase;
+		text-align: center;
+
+		@media #{$desktop} {
+			margin-top: 45px;
+			font-size: 65px;
+			font-weight: 700;
 		}
 	}
 
@@ -25,57 +40,30 @@
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
-			margin: 72px auto 0;
-			width: 950px;
+			margin: 55px auto 0;
+			width: 800px;
 		}
 	}
 
 	&__btn {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
 		width: 21.55rem;
 		height: 3.3rem;
 		line-height: 3.3rem;
 		margin: 0 auto;
-		padding: 0 1.6rem;
-		color: $white;
+		background-color: $white;
 		font-size: 1.1rem;
-		font-weight: 300;
+		font-weight: 700;
 		letter-spacing: 0.5px;
+		text-align: center;
 		text-transform: uppercase;
 		border-radius: 32rem;
 
 		@media #{$desktop} {
-			width: 454px;
-			height: 56px;
-			line-height: 56px;
-			padding: 0 34px;
-			font-size: 20px;
+			width: 360px;
+			height: 58px;
+			line-height: 58px;
+			font-size: 21px;
 			border-radius: 30px;
-		}
-
-		&_red {
-			background-color: $red;
-		}
-		&_blue {
-			margin-top: 1.5rem;
-			background-color: $blue--bright;
-
-			@media #{$desktop} {
-				margin-top: 0;
-			}
-		}
-
-		img {
-			width: 1.5rem;
-			height: 1.1rem;
-
-			@media #{$desktop} {
-				width: 31px;
-				height: 23px;
-			}
 		}
 	}
 }

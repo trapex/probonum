@@ -1,6 +1,6 @@
 .useful {
 	padding-top: 3.2rem;
-	background-color: $yellow;
+	background-color: $lime;
 
 	@media #{$desktop} {
 		padding-top: 55px;
@@ -20,7 +20,7 @@
 			padding-bottom: 3.5rem;
 
 			@media #{$desktop} {
-				padding-bottom: 73px;
+				padding-bottom: 81px;
 			}
 
 			&:before {
@@ -45,7 +45,7 @@
 					@media #{$desktop} {
 						width: 265px;
 						height: 227px;
-						top: -72px;
+						top: -68px;
 						right: 9px;
 					}
 				}
@@ -55,26 +55,25 @@
 			padding: 2.1rem 0 4.1rem 0;
 
 			@media #{$desktop} {
-				padding: 45px 0 95px 0;
+				padding: 62px 0 93px 0;
 			}
 
 			& .useful__title {
-				transform: translateY(13px);
+				transform: translateY(-20px);
 
 				&:before {
 					width: 10.93rem;
 					height: 10.93rem;
 					right: 0.6rem;
 					top: -1.7rem;
-					background: url(../img/maecenas.png) no-repeat 50%;
+					background: url(../img/maecenas.svg) no-repeat 50%;
 					background-size: contain;
-					z-index: -10;
 
 					@media #{$desktop} {
 						width: 225px;
 						height: 225px;
 						right: 10px;
-						top: -57px;
+						top: -34px;
 					}
 				}
 			}
@@ -84,15 +83,14 @@
 	&__title {
 		position: relative;
 		line-height: 1.1;
-		color: $white;
 		font-size: 2.2rem;
-		font-weight: 400;
-		letter-spacing: -0.3px;
+		font-weight: 700;
+		letter-spacing: 0;
+		color: $violet;
 
 		@media #{$desktop} {
 			width: 45%;
-			transform: translateY(6px);
-			font-size: 40px;
+			font-size: 35px;
 		}
 
 		&:before {
@@ -102,8 +100,8 @@
 		}
 
 		span {
-			color: $brown;
-			font-weight: 700;
+			color: $black;
+			font-weight: 300;
 		}
 	}
 
@@ -121,13 +119,12 @@
 			letter-spacing: 0.5px;
 
 			@media #{$desktop} {
-				width: 89%;
+				width: 92%;
 				margin-top: 24px;
 				font-size: 20px;
 			}
 
 			span {
-				color: $brown;
 				font-weight: 700;
 			}
 			&:before {

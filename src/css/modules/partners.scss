@@ -4,19 +4,19 @@
 	background-color: $gray;
 
 	@media #{$desktop} {
-		padding: 94px 0 91px;
+		padding: 97px 0 86px;
 	}
 
 	&__title {
 		margin: 0 auto;
 		line-height: 1.1;
 		font-size: 1.8rem;
-		font-weight: 100;
+		font-weight: 300;
 		text-align: center;
 
 		@media #{$desktop} {
-			width: 800px;
-			font-size: 40px;
+			width: 720px;
+			font-size: 35px;
 		}
 	}
 
@@ -35,6 +35,8 @@
 
 	&__item {
 		margin: 0 1.4rem 1.75rem 1.1rem;
+		//transition: background 0.3s ease-in;
+		cursor: pointer;
 
 		@media #{$desktop} {
 			margin: 0 30px 36px 20px;
@@ -49,33 +51,123 @@
 			}
 		}
 
-		&_leroy {
-			width: 5.68rem;
-			height: 3.4rem;
+		&_google {
+			width: 169px;
+			height: 56px;
 
 			@media #{$desktop} {
-				width: 117px;
-				height: 70px;
+				width: 169px;
+				height: 56px;
+				background-image: url(../img/google.png);
+				background-size: 169px 112px;
+				background-position: 0 0;
+			}
+			&:hover {
+				@media #{$desktop} {
+					background-position: 0 -56px;
+				}
 			}
 		}
-		&_megafon {
-			width: 10.2rem;
-			height: 1.79rem;
+
+		&_imho {
+			width: 90px;
+			height: 90px;
 
 			@media #{$desktop} {
-				width: 210px;
-				height: 37px;
+				width: 90px;
+				height: 90px;
+				background-image: url(../img/imho.png);
+				background-size: 90px 180px;
+				background-position: 0 0;
+			}
+			&:hover {
+				@media #{$desktop} {
+					background-position: 0 -90px;
+				}
 			}
 		}
-		&_vsk {
-			width: 8.36rem;
-			height: 2.28rem;
+
+		&_rbk {
+			width: 168px;
+			height: 45px;
 
 			@media #{$desktop} {
-				width: 172px;
-				height: 47px;
+				width: 168px;
+				height: 45px;
+				background-image: url(../img/rbk.png);
+				background-size: 168px 90px;
+				background-position: 0 0;
+			}
+			&:hover {
+				@media #{$desktop} {
+					background-position: 0 -45px;
+				}
 			}
 		}
+
+		&_ok {
+			width: 91px;
+			height: 91px;
+
+			@media #{$desktop} {
+				width: 91px;
+				height: 91px;
+				background-image: url(../img/ok.png);
+				background-size: 91px 182px;
+				background-position: 0 0;
+			}
+			&:hover {
+				@media #{$desktop} {
+					background-position: 0 -91px;
+				}
+			}
+		}
+
+		&_nra {
+			width: 292px;
+			height: 69px;
+
+			@media #{$desktop} {
+				width: 292px;
+				height: 69px;
+				background-image: url(../img/nra.png);
+				background-size: 292px 138px;
+				background-position: 0 0;
+			}
+			&:hover {
+				@media #{$desktop} {
+					background-position: 0 -69px;
+				}
+			}
+		}
+
+		//&_leroy {
+		//	width: 5.68rem;
+		//	height: 3.4rem;
+		//
+		//	@media #{$desktop} {
+		//		width: 117px;
+		//		height: 70px;
+		//	}
+		//}
+		//&_megafon {
+		//	width: 10.2rem;
+		//	height: 1.79rem;
+		//
+		//	@media #{$desktop} {
+		//		width: 210px;
+		//		height: 37px;
+		//	}
+		//}
+		//&_vsk {
+		//	width: 8.36rem;
+		//	height: 2.28rem;
+		//
+		//	@media #{$desktop} {
+		//		width: 172px;
+		//		height: 47px;
+		//	}
+		//}
 
 		img {
 			width: 100%;
@@ -90,8 +182,8 @@
 		text-align: center;
 
 		@media #{$desktop} {
-			margin-top: 40px;
-			font-size: 40px;
+			margin-top: 22px;
+			font-size: 35px;
 		}
 	}
 

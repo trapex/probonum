@@ -2,7 +2,7 @@
 	padding: 4.08rem 0 4.4rem 0;
 
 	@media #{$desktop} {
-		padding: 84px 0 92px 0;
+		padding: 95px 0 110px 0;
 	}
 
 	&__logo {
@@ -21,15 +21,15 @@
 	&__title {
 		margin: 2.1rem auto 0;
 		line-height: 1.25;
-		letter-spacing: 0.8px;
+		letter-spacing: 0;
 		font-size: 1.5rem;
-		font-weight: 700;
+		font-weight: 300;
 		text-align: center;
 
 		@media #{$desktop} {
 			width: 900px;
-			margin-top: 45px;
-			font-size: 28px;
+			margin-top: 35px;
+			font-size: 30px;
 		}
 	}
 
@@ -42,14 +42,14 @@
 			flex-direction: row;
 			justify-content: space-between;
 			align-items: flex-start;
-			margin: 110px auto 0;
+			margin: 75px auto 0;
 		}
 	}
 	&__item {
 		margin-top: 1.52rem;
 
 		@media #{$desktop} {
-			width: 20%;
+			width: 21%;
 			margin-top: 0;
 		}
 	}
@@ -57,12 +57,11 @@
 		width: 3.4rem;
 		height: 3.4rem;
 		margin: 0 auto;
-		background-color: $gray--light;
-		border-radius: 50%;
+		background: url(../img/check.png) no-repeat 50%;
 
 		@media #{$desktop} {
-			width: 70px;
-			height: 70px;
+			width: 83px;
+			height: 77px;
 		}
 	}
 	&__text {
@@ -73,8 +72,8 @@
 		text-align: center;
 
 		@media #{$desktop} {
-			margin-top: 24px;
-			font-size: 19px;
+			margin-top: 22px;
+			font-size: 20px;
 		}
 	}
 }

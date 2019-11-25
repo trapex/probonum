@@ -15,12 +15,12 @@ block content
 					span Probonum
 				.kv__subtitle
 					| Краудсорсинговая платформа, которая объединяет
-				.kv__content
-					.kv__text
-						| креативных волонтеров, разрабатывающих идеи в формате pro bono
-					.kv__text
-						| медиамеценатов, предоставляющих инвентарь для реализации кампаний социальной направленности
-					.kv__text
+				ul.kv__content
+					li
+						| креативных волонтеров, разрабатывающих идеи в&nbsp;формате pro bono
+					li
+						| медиамеценатов, предоставляющих инвентарь для&nbsp;реализации кампаний социальной направленности
+					li
 						| благотворительные фонды, предоставляющие брифы для решения важных социальных задач, стоящих перед обществом
 				.kv__next.js-next-btn
 		section.section.platform
@@ -30,9 +30,9 @@ block content
 				.platform__content
 					ul.platform__col
 						li
-							| специалисты рекламы и маркетинга, объединенные в сообщество интеллектуальных волонтеров с экспертным советом во главе
+							| специалисты рекламы и маркетинга, объединенные в&nbsp;сообщество интеллектуальных волонтеров с&nbsp;экспертным советом во главе
 						li
-							| инвентарь (ТВ, наружная реклама, digital, радио, пресса и спецпроекты) для реализации кампаний от медиа меценатов
+							| инвентарь (ТВ, наружная реклама, digital, радио, пресса и&nbsp;спецпроекты) для реализации кампаний от&nbsp;медиа меценатов
 						li
 							| реальные брифы от благотворительных фондов и&nbsp;НКО
 						li
@@ -89,7 +89,7 @@ block content
 				.help__title
 					| Ключевой партнер проекта — фонд «Нужна помощь»,
 					| поддерживающий работу 203 благотворительных организаций
-					| по всей России.
+					| по&nbsp;всей России.
 				.help__list
 					.help__item
 						.help__img
@@ -120,26 +120,11 @@ block content
 					| Нашими партнерами уже являются
 					| известные компании и бренды
 				.partners__list
-					.partners__item.partners__item_leroy
-						img(src='/src/img/leroy.png')
-					.partners__item.partners__item_megafon
-						img(src='/src/img/megafon.png')
-					.partners__item.partners__item_vsk
-						img(src='/src/img/vsk.png')
-					.partners__item.partners__item_leroy
-						img(src='/src/img/leroy.png')
-					.partners__item.partners__item_megafon
-						img(src='/src/img/megafon.png')
-					.partners__item.partners__item_megafon
-						img(src='/src/img/megafon.png')
-					.partners__item.partners__item_leroy
-						img(src='/src/img/leroy.png')
-					.partners__item.partners__item_vsk
-						img(src='/src/img/vsk.png')
-					.partners__item.partners__item_megafon
-						img(src='/src/img/megafon.png')
-					.partners__item.partners__item_leroy
-						img(src='/src/img/leroy.png')
+					.partners__item.partners__item_google
+					.partners__item.partners__item_imho
+					.partners__item.partners__item_rbk
+					.partners__item.partners__item_ok
+					.partners__item.partners__item_nra
 				.partners__subtitle
 					| Не хватает только вас!
 				.partners__sep
@@ -149,16 +134,19 @@ block content
 					| Чтобы это исправить, потребуется:
 				.steps__list
 					.steps__item
+						.steps__num 1
 						span
 							| Подписание соглашения
 							| о&nbsp;партнерстве
 							| с&nbsp;платформой
 							| Probonum
 					.steps__item
+						.steps__num 2
 						span
 							| Предоставление определенного объёма
 							| ресурсов для&nbsp;освещения социально значимых инициатив
 					.steps__item
+						.steps__num 3
 						span
 							| Согласование системного подхода
 							| по&nbsp;взаимодействию
@@ -166,31 +154,44 @@ block content
 							| Probonum
 		section.section.grape
 			.section__wrap
-				.grape__title
-					| Люси ВИНОГРАД
-				.grape__text
-					| Опыт Люси в рекламной индустрии составляет более 10 лет, в течение которых она проявила себя в разных сферах: маркетинг, креативный брендинг, BTL и digital-реклама. Люси является экспертом в нише маркетинга современного искусства и основателем арт-агентства Everal, образовательного проекта Everal Circle, а также арт-фестиваля молодых художников EverArt Weekend.
-				a.grape__btn(href='mailto:lucy.vinograd@dentsuaegis.ru')
-					| Написать Люси
+				.grape__conetnt
+					.grape__col
+						.grape__title
+							| Люси
+							br
+							span ВИНОГРАД
+						.grape__subtitle
+							| Лидер проекта и филантроп
+							| с активной гражданской
+							| позицией.
+					.grape__col
+						.grape__text
+							| Опыт Люси в рекламной индустрии составляет более&nbsp;10 лет, в течение которых она проявила себя в&nbsp;разных сферах: маркетинг, креативный брендинг, BTL и digital-реклама. Люси является экспертом в нише маркетинга современного искусства и основателем арт-агентства Everal, образовательного проекта Everal Circle, а также арт-фестиваля молодых художников EverArt Weekend.
+						a.grape__btn(href='mailto:lucy.vinograd@dentsuaegis.ru')
+							| Написать Люси
 		section.section.send
 			.section__wrap
 				.send__text
 					| Мы приглашаем к диалогу креативных волонтеров
 					| и&nbsp;медиамеценатов, чтобы придумывать и реализовывать идеи, которые сделают мир лучше.
-					br
-					br
+				.send__you
 					| Вы с нами?
 				.send__btns
-					a.send__btn.send__btn_red(href='mailto:volonteer@probonum.ru')
-						span Хочу стать волонтером
-						img(src='/src/img/arr.png')
-					a.send__btn.send__btn_blue(href='mailto:mediapatron@probonum.ru')
-						span Хочу стать меценатом
-						img(src='/src/img/arr.png')
+					a.send__btn(href='mailto:volonteer@probonum.ru')
+						| Хочу стать волонтером
+					a.send__btn(href='mailto:mediapatron@probonum.ru')
+						| Хочу стать меценатом
 		footer.section.footer
 			.section__wrap
-				.footer__text
-					| © Probonum, 2019
+				.footer__content
+					.footer__logo
+						| Probonum
+					.footer__description
+						| краудсорсинговая платформа и агентство для создания
+						br
+						| и реализации социально значимых проектов
+					.footer__copyright
+						| © Probonum, 2019
 
 
 

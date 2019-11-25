@@ -1,12 +1,12 @@
 .kv {
 	width: 100%;
 	background-color: $lime;
-	height: 40rem;
-	padding-top: 4rem;
+	height: 45rem;
+	padding-top: 3.5rem;
 
 	@media #{$desktop} {
-		height: 700px;
-		padding-top: 104px;
+		height: 760px;
+		padding-top: 74px;
 		background-image: url(../img/kv-bg.png);
 		background-repeat: no-repeat;
 		background-position: right bottom;
@@ -23,7 +23,7 @@
 
 		span {
 			line-height: 0.9;
-			font-size: 3.56rem;
+			font-size: 3.4rem;
 			font-weight: 700;
 			letter-spacing: 2.6px;
 			color: $violet;
@@ -41,6 +41,7 @@
 		letter-spacing: -0.1px;
 
 		@media #{$desktop} {
+			width: 700px;
 			margin-top: 34px;
 			font-size: 30px;
 		}
@@ -56,7 +57,7 @@
 
 			@media #{$desktop} {
 				margin-top: 23px;
-				width: 530px;
+				width: 640px;
 				font-size: 19px;
 			}
 

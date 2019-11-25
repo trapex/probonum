@@ -69,6 +69,7 @@
 		margin-top: 1.8rem;
 		background: url(../img/arrow.svg) no-repeat 50% 50%;
 		background-size: contain;
+		cursor: pointer;
 
 		@media #{$desktop} {
 			width: 46px;

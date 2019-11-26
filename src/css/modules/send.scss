@@ -1,9 +1,9 @@
 .send {
-	padding: 4.5rem 0 4rem;
+	padding: 3.5rem 0 4rem;
 	background-color: $lime;
 
 	@media #{$desktop} {
-		padding: 93px 0 105px;
+		padding: 106px 0 105px;
 	}
 
 	&__text {
@@ -14,7 +14,7 @@
 		line-height: 1.2;
 
 		@media #{$desktop} {
-			width: 1040px;
+			width: 900px;
 			margin: 0 auto;
 			font-size: 35px;
 		}
@@ -28,7 +28,7 @@
 		text-align: center;
 
 		@media #{$desktop} {
-			margin-top: 45px;
+			margin-top: 51px;
 			font-size: 65px;
 			font-weight: 700;
 		}

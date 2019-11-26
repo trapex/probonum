@@ -1,8 +1,8 @@
 .platform {
-	padding: 3.5rem 0 4.5rem 0;
+	padding: 3rem 0 3.5rem 0;
 
 	@media #{$desktop} {
-		padding: 96px 0 118px 0;
+		padding: 96px 0 75px 0;
 	}
 
 	&__title {
@@ -38,8 +38,15 @@
 			}
 
 			li {
+
 				@media #{$desktop} {
-					margin-top: 41px;
+					margin-top: 30px;
+				}
+
+				&:nth-of-type(1) {
+					@media #{$desktop} {
+						margin-top: 41px;
+					}
 				}
 			}
 		}
@@ -49,9 +56,10 @@
 			line-height: 1.2;
 			font-size: 1rem;
 			font-weight: 300;
+			letter-spacing: -0.2px;
 
 			@media #{$desktop} {
-				width: 90.8%;
+				width: 89%;
 				margin-top: 27px;
 				font-size: 19px;
 			}

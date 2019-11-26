@@ -2,7 +2,7 @@
 	padding: 4.08rem 0 4.4rem 0;
 
 	@media #{$desktop} {
-		padding: 95px 0 110px 0;
+		padding: 102px 0 98px 0;
 	}
 
 	&__logo {
@@ -27,7 +27,6 @@
 		text-align: center;
 
 		@media #{$desktop} {
-			width: 900px;
 			margin-top: 35px;
 			font-size: 30px;
 		}
@@ -42,15 +41,25 @@
 			flex-direction: row;
 			justify-content: space-between;
 			align-items: flex-start;
-			margin: 75px auto 0;
+			width: 1070px;
+			margin: 28px auto 0;
 		}
 	}
 	&__item {
 		margin-top: 1.52rem;
 
 		@media #{$desktop} {
-			width: 21%;
+			width: 25%;
 			margin-top: 0;
+		}
+
+		&:nth-of-type(1) {
+			& .help__text {
+				@media #{$desktop} {
+					width: 256px;
+					margin: 23px auto 0;
+				}
+			}
 		}
 	}
 	&__img {
@@ -67,13 +76,13 @@
 	}
 	&__text {
 		margin-top: 1.5rem;
-		line-height: 1.25;
+		line-height: 1.2;
 		font-size: 1.18rem;
 		font-weight: 300;
 		text-align: center;
 
 		@media #{$desktop} {
-			margin-top: 22px;
+			margin-top: 23px;
 			font-size: 20px;
 		}
 	}

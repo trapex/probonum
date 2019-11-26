@@ -4,7 +4,7 @@
 	background-color: $gray;
 
 	@media #{$desktop} {
-		padding: 97px 0 86px;
+		padding: 96px 0 98px;
 	}
 
 	&__title {
@@ -15,7 +15,7 @@
 		text-align: center;
 
 		@media #{$desktop} {
-			width: 860px;
+			width: 680px;
 			font-size: 35px;
 		}
 	}
@@ -26,83 +26,173 @@
 		flex-wrap: wrap;
 		justify-content: space-evenly;
 		align-items: center;
-		margin-top: 4rem;
+		margin-top: 3.5rem;
 
 		@media #{$desktop} {
 			justify-content: space-between;
-			margin-top: 84px;
+			margin-top: 56px;
 		}
 	}
 
 	&__item {
-		//margin: 0 1.4rem 1.75rem 1.1rem;
-		//transition: background 0.3s ease-in;
-		margin: 0.7rem 1.2rem;
+		margin: 0 0.5rem 2rem;
+		opacity: 0.45;
 		cursor: pointer;
 
 		@media #{$desktop} {
-			margin: 0 30px 36px 20px;
+			margin: 0 0 84px;
 		}
 
-		&:nth-of-type(n+1) {
-			//margin-left: 0;
-		}
-		&:nth-of-type(n+5) {
+		&:hover {
 			@media #{$desktop} {
-				margin-right: 0;
+				opacity: 1;
 			}
 		}
 
 		&_google {
-			width: 8.45rem;
-			height: 2.8rem;
-			background-image: url(../img/google.png);
-			background-size: 8.45rem 5.6rem;
+			width: 12.5rem;
+			height: 1.85rem;
+			background-image: url(../img/google-mono.png);
+			background-size: 12.5rem 1.85rem;
 			background-position: 0 0;
 
 			@media #{$desktop} {
-				width: 169px;
-				height: 56px;
-				background-size: 169px 112px;
+				width: 250px;
+				height: 37px;
+				background-size: 250px 37px;
 
 			}
 			&:hover {
 				@media #{$desktop} {
-					background-position: 0 -56px;
+					background-image: url(../img/google.png);
 				}
 			}
 		}
 
 		&_imho {
-			width: 4.5rem;
-			height: 4.5rem;
+			width: 3.4rem;
+			height: 3.4rem;
 			background-image: url(../img/imho.png);
-			background-size: 4.5rem 9rem;
+			background-size: 3.4rem 6.8rem;
 			background-position: 0 0;
 
 			@media #{$desktop} {
-				width: 90px;
-				height: 90px;
-				background-size: 90px 180px;
+				width: 68px;
+				height: 68px;
+				background-size: 68px 136px;
 			}
 			&:hover {
 				@media #{$desktop} {
-					background-position: 0 -90px;
+					background-position: 0 -68px;
 				}
 			}
 		}
 
 		&_rbk {
-			width: 8.4rem;
-			height: 2.25rem;
+			width: 6.9rem;
+			height: 1.8rem;
 			background-image: url(../img/rbk.png);
-			background-size: 8.4rem 4.5rem;
+			background-size: 6.9rem 3.6rem;
 			background-position: 0 0;
 
 			@media #{$desktop} {
-				width: 168px;
+				width: 135px;
+				height: 36px;
+				background-size: 135px 72px;
+			}
+			&:hover {
+				@media #{$desktop} {
+					background-position: 0 -36px;
+				}
+			}
+		}
+
+		&_maer {
+			width: 11.95rem;
+			height: 1rem;
+			background-image: url(../img/maer.png);
+			background-size: 11.95rem 2rem;
+			background-position: 0 0;
+
+			@media #{$desktop} {
+				width: 239px;
+				height: 20px;
+				background-size: 239px 40px;
+			}
+			&:hover {
+				@media #{$desktop} {
+					background-position: 0 -20px;
+				}
+			}
+		}
+
+		&_nra {
+			width: 11.95rem;
+			height: 2.85rem;
+			background-image: url(../img/nra.png);
+			background-size: 11.95rem 5.7rem;
+			background-position: 0 0;
+
+			@media #{$desktop} {
+				width: 239px;
+				height: 57px;
+				background-size: 239px 114px;
+			}
+			&:hover {
+				@media #{$desktop} {
+					background-position: 0 -57px;
+				}
+			}
+		}
+
+		&_russ {
+			width: 13.7rem;
+			height: 2.2rem;
+			background-image: url(../img/russ-outdoor.png);
+			background-size: 13.7rem 4.4rem;
+			background-position: 0 0;
+
+			@media #{$desktop} {
+				width: 274px;
+				height: 44px;
+				background-size: 274px 88px;
+			}
+			&:hover {
+				@media #{$desktop} {
+					background-position: 0 -44px;
+				}
+			}
+		}
+
+		&_gallery {
+			width: 12.2rem;
+			height: 2.7rem;
+			background-image: url(../img/gallery.png);
+			background-size: 12.2rem 5.4rem;
+			background-position: 0 0;
+
+			@media #{$desktop} {
+				width: 244px;
+				height: 54px;
+				background-size: 244px 108px;
+			}
+			&:hover {
+				@media #{$desktop} {
+					background-position: 0 -54px;
+				}
+			}
+		}
+		&_emg {
+			width: 6.45rem;
+			height: 2.25rem;
+			background-image: url(../img/emg.png);
+			background-size: 6.45rem 4.5rem;
+			background-position: 0 0;
+
+			@media #{$desktop} {
+				width: 129px;
 				height: 45px;
-				background-size: 168px 90px;
+				background-size: 129px 90px;
 			}
 			&:hover {
 				@media #{$desktop} {
@@ -110,72 +200,24 @@
 				}
 			}
 		}
-
 		&_ok {
-			width: 4.55rem;
-			height: 4.55rem;
+			width: 15rem;
+			height: 1.55rem;
 			background-image: url(../img/ok.png);
-			background-size: 4.55rem 9.1rem;
+			background-size: 15rem 3.1rem;
 			background-position: 0 0;
 
 			@media #{$desktop} {
-				width: 91px;
-				height: 91px;
-				background-size: 91px 182px;
+				width: 300px;
+				height: 31px;
+				background-size: 300px 62px;
 			}
 			&:hover {
 				@media #{$desktop} {
-					background-position: 0 -91px;
+					background-position: 0 -31px;
 				}
 			}
 		}
-
-		&_nra {
-			width: 14.6rem;
-			height: 3.45rem;
-			background-image: url(../img/nra.png);
-			background-size: 14.6rem 6.9rem;
-			background-position: 0 0;
-
-			@media #{$desktop} {
-				width: 292px;
-				height: 69px;
-				background-size: 292px 138px;
-			}
-			&:hover {
-				@media #{$desktop} {
-					background-position: 0 -69px;
-				}
-			}
-		}
-
-		//&_leroy {
-		//	width: 5.68rem;
-		//	height: 3.4rem;
-		//
-		//	@media #{$desktop} {
-		//		width: 117px;
-		//		height: 70px;
-		//	}
-		//}
-		//&_megafon {
-		//	width: 10.2rem;
-		//	height: 1.79rem;
-		//
-		//	@media #{$desktop} {
-		//		width: 210px;
-		//		height: 37px;
-		//	}
-		//}
-		//&_vsk {
-		//	width: 8.36rem;
-		//	height: 2.28rem;
-		//
-		//	@media #{$desktop} {
-		//		width: 172px;
-		//		height: 47px;
-		//	}
-		//}
 
 		img {
 			width: 100%;
@@ -190,24 +232,8 @@
 		text-align: center;
 
 		@media #{$desktop} {
-			margin-top: 22px;
+			margin-top: 8px;
 			font-size: 35px;
-		}
-	}
-
-	&:after {
-		content: '';
-		position: absolute;
-		bottom: -2.9rem;
-		left: 50%;
-		transform: translateX(-50%);
-		border: 1.45rem solid transparent;
-		border-top: 1.45rem solid $gray;
-
-		@media #{$desktop} {
-			bottom: -60px;
-			border: 30px solid transparent;
-			border-top: 30px solid $gray;
 		}
 	}
 }

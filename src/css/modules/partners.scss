@@ -38,6 +38,7 @@
 		margin: 0 0.5rem 2rem;
 		opacity: 0.45;
 		cursor: pointer;
+		//outline: 1px solid $violet;
 
 		@media #{$desktop} {
 			margin: 0 0 84px;
@@ -175,6 +176,7 @@
 				width: 244px;
 				height: 54px;
 				background-size: 244px 108px;
+				transform: translateY(2px);
 			}
 			&:hover {
 				@media #{$desktop} {
@@ -188,11 +190,13 @@
 			background-image: url(../img/emg.png);
 			background-size: 6.45rem 4.5rem;
 			background-position: 0 0;
+			transform: translateY(0.1rem);
 
 			@media #{$desktop} {
 				width: 129px;
 				height: 45px;
 				background-size: 129px 90px;
+				transform: translateY(7px);
 			}
 			&:hover {
 				@media #{$desktop} {

@@ -1,5 +1,5 @@
 .useful {
-	padding-top: 4.5rem;
+	padding-top: 4rem;
 	background-color: $lime;
 
 	@media #{$desktop} {
@@ -37,7 +37,7 @@
 				&:before {
 					width: 12.88rem;
 					height: 11rem;
-					top: -2.7rem;
+					top: -0.7rem;
 					right: 0.6rem;
 					background: url(../img/volunteer.png) no-repeat 50%;
 					background-size: contain;
@@ -58,7 +58,7 @@
 			}
 		}
 		&:nth-of-type(2) {
-			padding: 6rem 0 3.5rem 0;
+			padding: 4rem 0 3.5rem 0;
 
 			@media #{$desktop} {
 				padding: 50px 0 101px 0;
@@ -80,7 +80,7 @@
 					width: 10.93rem;
 					height: 10.93rem;
 					right: 0.6rem;
-					top: -4.8rem;
+					top: -3rem;
 					background: url(../img/maecenas.svg) no-repeat 50%;
 					background-size: contain;
 
@@ -98,10 +98,18 @@
 					transform: translateY(25px);
 				}
 			}
+
+			& .useful__list {
+				margin-top: 4rem;
+
+				@media #{$desktop} {
+					margin-top: 0;
+				}
+			}
 		}
 
 		&:nth-of-type(3) {
-			padding: 7rem 0 4.1rem 0;
+			padding: 5.5rem 0 4.1rem 0;
 
 			@media #{$desktop} {
 				padding: 50px 0 87px 0;
@@ -113,7 +121,7 @@
 					width: 10.93rem;
 					height: 10.93rem;
 					right: 0.6rem;
-					top: -6.2rem;
+					top: -4.6rem;
 					background: url(../img/us.png) no-repeat 50%;
 					background-size: contain;
 
@@ -129,6 +137,14 @@
 			& .useful__title {
 				@media #{$desktop} {
 					transform: translateY(21px);
+				}
+			}
+
+			& .useful__list {
+				margin-top: 4.6rem;
+
+				@media #{$desktop} {
+					margin-top: 0;
 				}
 			}
 		}

@@ -39,9 +39,9 @@
 
 			li {
 
-				@media #{$desktop} {
-					margin-top: 30px;
-				}
+				//@media #{$desktop} {
+				//	margin-top: 30px;
+				//}
 
 				&:nth-of-type(1) {
 					@media #{$desktop} {

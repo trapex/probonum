@@ -34,7 +34,7 @@
 		line-height: 1.2;
 
 		@media #{$desktop} {
-			width: 775px;
+			width: 675px;
 			margin-top: 0;
 			font-size: 16.5px;
 		}
@@ -48,6 +48,19 @@
 		}
 	}
 
+	&__dentsu {
+		width: 5rem;
+		height: 5rem;
+		margin: 1rem 0;
+		background: url(../img/main-logo.png) no-repeat 50%;
+		background-size: contain;
+
+		@media #{$desktop} {
+			width: 100px;
+			height: 100px;
+		}
+	}
+
 	&__copyright {
 		margin-top: 1.1rem;
 		font-size: 1.1rem;
@@ -55,7 +68,7 @@
 		letter-spacing: 0.4px;
 
 		@media #{$desktop} {
-			width: 200px;
+			width: 160px;
 			margin-top: 0;
 			font-size: 22px;
 			transform: translateY(-3px);

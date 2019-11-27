@@ -30,7 +30,7 @@
 
 		@media #{$desktop} {
 			justify-content: space-between;
-			margin-top: 56px;
+			margin-top: 76px;
 		}
 	}
 
@@ -41,7 +41,7 @@
 		//outline: 1px solid $violet;
 
 		@media #{$desktop} {
-			margin: 0 0 84px;
+			margin: 0 30px 74px 0;
 		}
 
 		&:hover {
@@ -51,16 +51,16 @@
 		}
 
 		&_google {
-			width: 12.5rem;
-			height: 1.85rem;
+			width: 10rem;
+			height: 1.45rem;
 			background-image: url(../img/google-mono.png);
-			background-size: 12.5rem 1.85rem;
+			background-size: 10rem 1.45rem;
 			background-position: 0 0;
 
 			@media #{$desktop} {
-				width: 250px;
-				height: 37px;
-				background-size: 250px 37px;
+				width: 200px;
+				height: 29px;
+				background-size: 200px 29px;
 
 			}
 			&:hover {
@@ -71,112 +71,16 @@
 		}
 
 		&_imho {
-			width: 3.4rem;
-			height: 3.4rem;
-			background-image: url(../img/imho.png);
-			background-size: 3.4rem 6.8rem;
-			background-position: 0 0;
-
-			@media #{$desktop} {
-				width: 68px;
-				height: 68px;
-				background-size: 68px 136px;
-			}
-			&:hover {
-				@media #{$desktop} {
-					background-position: 0 -68px;
-				}
-			}
-		}
-
-		&_rbk {
-			width: 6.9rem;
-			height: 1.8rem;
-			background-image: url(../img/rbk.png);
-			background-size: 6.9rem 3.6rem;
-			background-position: 0 0;
-
-			@media #{$desktop} {
-				width: 135px;
-				height: 36px;
-				background-size: 135px 72px;
-			}
-			&:hover {
-				@media #{$desktop} {
-					background-position: 0 -36px;
-				}
-			}
-		}
-
-		&_maer {
-			width: 11.95rem;
-			height: 1rem;
-			background-image: url(../img/maer.png);
-			background-size: 11.95rem 2rem;
-			background-position: 0 0;
-
-			@media #{$desktop} {
-				width: 239px;
-				height: 20px;
-				background-size: 239px 40px;
-			}
-			&:hover {
-				@media #{$desktop} {
-					background-position: 0 -20px;
-				}
-			}
-		}
-
-		&_nra {
-			width: 11.95rem;
-			height: 2.85rem;
-			background-image: url(../img/nra.png);
-			background-size: 11.95rem 5.7rem;
-			background-position: 0 0;
-
-			@media #{$desktop} {
-				width: 239px;
-				height: 57px;
-				background-size: 239px 114px;
-			}
-			&:hover {
-				@media #{$desktop} {
-					background-position: 0 -57px;
-				}
-			}
-		}
-
-		&_russ {
-			width: 13.7rem;
-			height: 2.2rem;
-			background-image: url(../img/russ-outdoor.png);
-			background-size: 13.7rem 4.4rem;
-			background-position: 0 0;
-
-			@media #{$desktop} {
-				width: 274px;
-				height: 44px;
-				background-size: 274px 88px;
-			}
-			&:hover {
-				@media #{$desktop} {
-					background-position: 0 -44px;
-				}
-			}
-		}
-
-		&_gallery {
-			width: 12.2rem;
+			width: 2.7rem;
 			height: 2.7rem;
-			background-image: url(../img/gallery.png);
-			background-size: 12.2rem 5.4rem;
+			background-image: url(../img/imho.png);
+			background-size: 2.7rem 5.4rem;
 			background-position: 0 0;
 
 			@media #{$desktop} {
-				width: 244px;
+				width: 54px;
 				height: 54px;
-				background-size: 244px 108px;
-				transform: translateY(2px);
+				background-size: 54px 108px;
 			}
 			&:hover {
 				@media #{$desktop} {
@@ -184,19 +88,56 @@
 				}
 			}
 		}
-		&_emg {
-			width: 6.45rem;
-			height: 2.25rem;
-			background-image: url(../img/emg.png);
-			background-size: 6.45rem 4.5rem;
+
+		&_rbk {
+			width: 5.52rem;
+			height: 1.43rem;
+			background-image: url(../img/rbk.png);
+			background-size: 5.52rem 2.86rem;
 			background-position: 0 0;
-			transform: translateY(0.1rem);
 
 			@media #{$desktop} {
-				width: 129px;
+				width: 108px;
+				height: 28px;
+				background-size: 108px 56px;
+			}
+			&:hover {
+				@media #{$desktop} {
+					background-position: 0 -28px;
+				}
+			}
+		}
+
+		&_maer {
+			width: 9.4rem;
+			height: 0.75rem;
+			background-image: url(../img/maer.png);
+			background-size: 9.4rem 1.5rem;
+			background-position: 0 0;
+
+			@media #{$desktop} {
+				width: 188px;
+				height: 15px;
+				background-size: 188px 31px;
+			}
+			&:hover {
+				@media #{$desktop} {
+					background-position: 0 -16px;
+				}
+			}
+		}
+
+		&_nra {
+			width: 9.4rem;
+			height: 2.25rem;
+			background-image: url(../img/nra.png);
+			background-size: 9.4rem 4.5rem;
+			background-position: 0 0;
+
+			@media #{$desktop} {
+				width: 188px;
 				height: 45px;
-				background-size: 129px 90px;
-				transform: translateY(7px);
+				background-size: 188px 90px;
 			}
 			&:hover {
 				@media #{$desktop} {
@@ -204,21 +145,118 @@
 				}
 			}
 		}
-		&_ok {
-			width: 15rem;
-			height: 1.55rem;
-			background-image: url(../img/ok.png);
-			background-size: 15rem 3.1rem;
+
+		&_russ {
+			width: 10.04rem;
+			height: 1.59rem;
+			background-image: url(../img/russ-outdoor.png);
+			background-size: 10.04rem 3.18rem;
 			background-position: 0 0;
 
 			@media #{$desktop} {
-				width: 300px;
-				height: 31px;
-				background-size: 300px 62px;
+				width: 201px;
+				height: 32px;
+				background-size: 201px 64px;
 			}
 			&:hover {
 				@media #{$desktop} {
-					background-position: 0 -31px;
+					background-position: 0 -32px;
+				}
+			}
+		}
+
+		&_gallery {
+			width: 9.8rem;
+			height: 2.2rem;
+			background-image: url(../img/gallery.png);
+			background-size: 9.8rem 4.4rem;
+			background-position: 0 0;
+
+			@media #{$desktop} {
+				width: 196px;
+				height: 44px;
+				background-size: 196px 88px;
+				transform: translateY(2px);
+			}
+			&:hover {
+				@media #{$desktop} {
+					background-position: 0 -44px;
+				}
+			}
+		}
+		&_emg {
+			width: 5.1rem;
+			height: 1.75rem;
+			background-image: url(../img/emg.png);
+			background-size: 5.1rem 3.5rem;
+			background-position: 0 0;
+			transform: translateY(0.1rem);
+
+			@media #{$desktop} {
+				width: 102px;
+				height: 35px;
+				background-size: 102px 70px;
+				transform: translateY(7px);
+			}
+			&:hover {
+				@media #{$desktop} {
+					background-position: 0 -35px;
+				}
+			}
+		}
+		&_ok {
+			width: 12.05rem;
+			height: 1.2rem;
+			background-image: url(../img/ok.png);
+			background-size: 12.05rem 2.4rem;
+			background-position: 0 0;
+
+			@media #{$desktop} {
+				width: 241px;
+				height: 24px;
+				background-size: 241px 48px;
+			}
+			&:hover {
+				@media #{$desktop} {
+					background-position: 0 -24px;
+				}
+			}
+		}
+
+		&_laice {
+			width: 8.54rem;
+			height: 3.05rem;
+			background-image: url(../img/laice.png);
+			background-size: 8.54rem 6.1rem;
+			background-position: 0 0;
+
+			@media #{$desktop} {
+				width: 171px;
+				height: 61px;
+				background-size: 171px 122px;
+			}
+			&:hover {
+				@media #{$desktop} {
+					background-position: 0 -61px;
+				}
+			}
+		}
+
+		&_olimp {
+			width: 7.75rem;
+			height: 3.05rem;
+			background-image: url(../img/olimp.png);
+			background-size: 7.75rem 6.1rem;
+			background-position: 0 0;
+
+			@media #{$desktop} {
+				width: 155px;
+				height: 61px;
+				background-size: 155px 122px;
+			}
+			&:hover {
+				@media #{$desktop} {
+					background-position: 0 -61px;
 				}
 			}
 		}

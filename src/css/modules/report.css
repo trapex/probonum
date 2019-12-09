@@ -96,6 +96,7 @@
 	max-width: 1212px;
 	margin: 0 auto;
 	padding: 0 16px;
+	overflow: hidden; /*  todo */
 }
 
 .similar-channels__header {
@@ -139,11 +140,17 @@
 	margin: 0;
 	padding-top: 23px;
 	display: block;
+	transition-duration: 0.3s;  /* todo */
 }
 
 .similar-channels__item {
 	margin: 0;
 	font-size: 18px;
+
+
+	display: inline-block;  /*  todo */
+	vertical-align: top;  /*  todo */
+	white-space: normal;  /*  todo */
 }
 
 .similar-channels__item:hover .report-content-item--img::after {

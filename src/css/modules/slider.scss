@@ -1,0 +1,37 @@
+.slider {
+  &__arrows {
+	display: flex;
+  }
+  &__arrow {
+	width: 60px;
+	height: 60px;
+	border: 1px solid #eeeeee;
+	cursor: pointer;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  &__wrap {
+	max-width: 1212px;
+	margin: 0 auto;
+	padding: 0 16px;
+  }
+  &__list {
+	transform: translateX(0);
+	transition: transform 0.3s ease-in;
+  }
+  &__item {
+	display: inline-block;
+	//width: calc(20%);
+
+	//flex: 1 0 22.02%;
+	width: 280px;
+	height: 200px;
+	margin: 0 20px 0 0;
+	background-color: #eeeeee;
+
+	vertical-align: top;
+	white-space: normal;
+  }
+}

@@ -51,12 +51,13 @@ $(function () {
 
 		this._options.el = document.querySelector(this._options.selector);
 		this._options.count = this._options.el.children.length;
-		this._options.maxOffset = (this._options.count - this._options.items)* 20;
+		this._options.itemWidth = 100/this._options.count;
+		this._options.maxOffset = (this._options.count - this._options.items)* this._options.itemWidth;
 
 		this.setDefault = function() {
 
 			Array.prototype.forEach.call(this._options.el.children, (el) => {
-				el.style.width = '20%';
+				el.style.width = `${this._options.itemWidth}%`;
 				el.style.paddingRight = '20px';
 			})
 
@@ -80,7 +81,7 @@ $(function () {
 						if ((this._options.arrows.prev === 'disable' && sign === '1') || (this._options.arrows.next === 'disable' && sign === '-1')) {
 							return false;
 						}
-						let offset = parseInt(this._options.el.style.transform.match(/-?[0-9]\d*%/)[0]) + sign * 20;
+						let offset = parseInt(this._options.el.style.transform.match(/-?[0-9]\d*%/)[0]) + sign * this._options.itemWidth;
 						console.log(`slide: ${offset}`);
 						this._options.el.style.transform = `translate3d(${offset}%, 0px, 0px)`;
 						document.querySelector("[data-js-arrow='1']").classList.remove('slider__arrow_disable');

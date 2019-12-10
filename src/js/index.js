@@ -64,38 +64,45 @@ $(function () {
 			this._options.el.style.width = `calc(${25 * this._options.count}% + 20px)`;
 			this._options.el.style.transform = `translate3d(0%, 0px, 0px)`;
 			this._options.arrows.prev = 'disable';
-			$('.arrow_prev').addClass('slider__arrow_disable');
+			document.querySelector("[data-js-arrow='1']").classList.add('similar-channels__arrow_disable');
 		}
 
 		this.checkDisable = function(offset) {
 			return !(offset <= 0 || offset >= this._options.maxOffset);
 		}
 
-		this.bindEvents = function () {
-			Array.prototype.forEach.call(document.querySelectorAll(this._options.arrows.selector), (item) => {
-				item.addEventListener('click', (e) => {
-					if (e.target.dataset.jsArrow) {
-						e.stopPropagation();
+		this.move = function(e) {
+			if (e.target.dataset.jsArrow) {
+				e.stopPropagation();
 
-						let sign = e.target.dataset.jsArrow;
-						if ((this._options.arrows.prev === 'disable' && sign === '1') || (this._options.arrows.next === 'disable' && sign === '-1')) {
-							return false;
-						}
-						let offset = parseInt(this._options.el.style.transform.match(/-?[0-9]\d*%/)[0]) + sign * this._options.itemWidth;
-						console.log(`slide: ${offset}`);
-						this._options.el.style.transform = `translate3d(${offset}%, 0px, 0px)`;
-						document.querySelector("[data-js-arrow='1']").classList.remove('slider__arrow_disable');
-						document.querySelector("[data-js-arrow='-1']").classList.remove('slider__arrow_disable');
-						this._options.arrows.prev = '';
-						this._options.arrows.next = '';
-						if (!this.checkDisable(-offset)) {
-							let direction = sign === '1' ? 'prev' : 'next';
-							this._options.arrows[direction] = 'disable';
-							e.target.classList.add('slider__arrow_disable');
-						}
-					}
-				});
+				let sign = e.target.dataset.jsArrow;
+				if ((this._options.arrows.prev === 'disable' && sign === '1') || (this._options.arrows.next === 'disable' && sign === '-1')) {
+					return false;
+				}
+				let offset = parseInt(this._options.el.style.transform.match(/-?[0-9]\d*%/)[0]) + sign * this._options.itemWidth;
+				console.log(`slide: ${offset}`);
+				this._options.el.style.transform = `translate3d(${offset}%, 0px, 0px)`;
+				document.querySelector("[data-js-arrow='1']").classList.remove('similar-channels__arrow_disable');
+				document.querySelector("[data-js-arrow='-1']").classList.remove('similar-channels__arrow_disable');
+				this._options.arrows.prev = '';
+				this._options.arrows.next = '';
+				if (!this.checkDisable(-offset)) {
+					let direction = sign === '1' ? 'prev' : 'next';
+					this._options.arrows[direction] = 'disable';
+					e.target.classList.add('slider__arrow_disable');
+				}
+			}
+		}
+
+		this.bindEvents = function () {
+			this.move.bind(this);
+			Array.prototype.forEach.call(document.querySelectorAll(this._options.arrows.selector), (item) => {
+				item.addEventListener('click', this.move.bind(this), true);
 			});
+		}
+
+		this.reset = function() {
+			this.setDefault();
 		}
 
 		this.init = function () {
@@ -109,6 +116,12 @@ $(function () {
 	let slider = new Slider({
 		selector: '.js-similar-list'
 	});
+
+	$('.js-reset').on('click', (e) => {
+		if (slider) {
+			slider.reset();
+		}
+	})
 
 
 	// let $slider = $('.js-similar-list');

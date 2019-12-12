@@ -119,7 +119,7 @@
 	outline: none;
 	border: none;
 }
-.similar-channels__arrow:disabled {
+.similar-channels__arrow_disable {
 	opacity: 0.5;
 }
 .similar-channels__arrow.similar-channels__arrow_next {
@@ -127,7 +127,7 @@
 }
 .similar-channels__arrow.similar-channels__arrow_prev {
 	/*background: url(../img/report/arrow-next.svg) no-repeat;*/
-	transform: rotate(180deg);
+	/*transform: rotate(180deg);*/
 }
 
 .similar-channels__title {

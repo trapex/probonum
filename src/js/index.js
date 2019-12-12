@@ -89,20 +89,33 @@ $(function () {
 				if (!this.checkDisable(-offset)) {
 					let direction = sign === '1' ? 'prev' : 'next';
 					this._options.arrows[direction] = 'disable';
-					e.target.classList.add('slider__arrow_disable');
+					e.target.classList.add('similar-channels__arrow_disable');
 				}
 			}
 		}
 
-		this.bindEvents = function () {
-			this.move.bind(this);
+		this.handleEvent = function(e) {
+			if (e.type == 'click') {
+				this.move(e);
+			}
+		};
+
+		this.unbindEvents = function () {
 			Array.prototype.forEach.call(document.querySelectorAll(this._options.arrows.selector), (item) => {
-				item.addEventListener('click', this.move.bind(this), true);
+				item.removeEventListener('click', this);
+			});
+		}
+
+		this.bindEvents = function () {
+			this.unbindEvents();
+			Array.prototype.forEach.call(document.querySelectorAll(this._options.arrows.selector), (item) => {
+				item.addEventListener('click', this);
 			});
 		}
 
 		this.reset = function() {
-			this.setDefault();
+			// this.setDefault();
+			this.unbindEvents();
 		}
 
 		this.init = function () {

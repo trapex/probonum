@@ -54,6 +54,13 @@ $(function () {
 		this._options.itemWidth = 100/this._options.count;
 		this._options.maxOffset = (this._options.count - this._options.items)* this._options.itemWidth;
 
+		this.clearArrows = function () {
+			document.querySelector("[data-js-arrow='1']").classList.remove('similar-channels__arrow_disable');
+			document.querySelector("[data-js-arrow='-1']").classList.remove('similar-channels__arrow_disable');
+			this._options.arrows.prev = '';
+			this._options.arrows.next = '';
+		}
+
 		this.setDefault = function() {
 
 			Array.prototype.forEach.call(this._options.el.children, (el) => {
@@ -63,6 +70,7 @@ $(function () {
 
 			this._options.el.style.width = `calc(${25 * this._options.count}% + 20px)`;
 			this._options.el.style.transform = `translate3d(0%, 0px, 0px)`;
+			this.clearArrows();
 			this._options.arrows.prev = 'disable';
 			document.querySelector("[data-js-arrow='1']").classList.add('similar-channels__arrow_disable');
 		}
@@ -82,10 +90,7 @@ $(function () {
 				let offset = parseInt(this._options.el.style.transform.match(/-?[0-9]\d*%/)[0]) + sign * this._options.itemWidth;
 				console.log(`slide: ${offset}`);
 				this._options.el.style.transform = `translate3d(${offset}%, 0px, 0px)`;
-				document.querySelector("[data-js-arrow='1']").classList.remove('similar-channels__arrow_disable');
-				document.querySelector("[data-js-arrow='-1']").classList.remove('similar-channels__arrow_disable');
-				this._options.arrows.prev = '';
-				this._options.arrows.next = '';
+				this.clearArrows();
 				if (!this.checkDisable(-offset)) {
 					let direction = sign === '1' ? 'prev' : 'next';
 					this._options.arrows[direction] = 'disable';
